@@ -10,11 +10,15 @@
     xmlns:vms="using:FlipViewBugDemo1.ViewModels"
     xmlns:vpviews="using:FlipViewBugDemo1.Views.ViewPageViews"
     >
-    <FlipView IsTabStop="True"
-              ItemsSource="{x:Bind ViewModel.ImageCollectionPanelVMs}">
+    <FlipView ItemsSource="{x:Bind ViewModel.ImageCollectionPanelVMs}">
         <FlipView.ItemTemplate>
             <DataTemplate x:DataType="vms:ImageCollectionPanelVM">
                 <vpviews:ImageCollectionPanel ImageInfo="{x:Bind ImageInfo}"/>
+                <!--<Image>
+                    <Image.Source>
+                        <BitmapImage UriSource="{x:Bind ImageInfo.ImageFilePath}"/>
+                    </Image.Source>
+                </Image>-->
             </DataTemplate>
         </FlipView.ItemTemplate>
     </FlipView>
