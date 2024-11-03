@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FlipViewBugDemo1 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FlipViewBugDemo1 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
