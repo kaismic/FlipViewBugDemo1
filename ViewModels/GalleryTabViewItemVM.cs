@@ -12,7 +12,7 @@ namespace FlipViewBugDemo1.ViewModels {
         public List<ImageCollectionPanelVM> ImageCollectionPanelVMs { get; set; }
 
         public GalleryTabViewItemVM() {
-            for (int i = 1; i <= 7; i++) {
+            for (int i = 1; i <= 10; i++) {
                 ImageInfo info = new() {
                     ImageFilePath = Path.Combine(LOCAL_DIR, i.ToString() + ".jpeg")
                 };
