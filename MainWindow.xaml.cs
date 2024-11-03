@@ -1,5 +1,4 @@
 using FlipViewBugDemo1.ViewModels;
-using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 
 namespace FlipViewBugDemo1 {

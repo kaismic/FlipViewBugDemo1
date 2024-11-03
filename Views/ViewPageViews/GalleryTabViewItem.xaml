@@ -10,11 +10,11 @@
     xmlns:vms="using:FlipViewBugDemo1.ViewModels"
     xmlns:vpviews="using:FlipViewBugDemo1.Views.ViewPageViews"
     >
-    <FlipView FocusVisualPrimaryThickness="0" IsTabStop="True"
-              ItemsSource="{x:Bind ViewModel.ImageCollectionPanelVMs, Mode=OneWay}">
+    <FlipView IsTabStop="True"
+              ItemsSource="{x:Bind ViewModel.ImageCollectionPanelVMs}">
         <FlipView.ItemTemplate>
             <DataTemplate x:DataType="vms:ImageCollectionPanelVM">
-                <vpviews:ImageCollectionPanel ViewModel="{x:Bind}"/>
+                <vpviews:ImageCollectionPanel ImageInfo="{x:Bind ImageInfo}"/>
             </DataTemplate>
         </FlipView.ItemTemplate>
     </FlipView>
