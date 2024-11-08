@@ -9,7 +9,7 @@
     >
     <Image>
         <Image.Source>
-            <BitmapImage UriSource="{x:Bind ImageInfo.ImageFilePath}"/>
+            <BitmapImage UriSource="{x:Bind ImageInfo.ImageFilePath, Mode=OneWay}"/>
         </Image.Source>
     </Image>
 </Grid>
